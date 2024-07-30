@@ -1,0 +1,53 @@
+body {
+
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 144px;
+    margin-top: 50px;
+    
+}
+
+.round-shape{
+    text-align: center;
+
+  
+}
+
+.round-shape p{
+    text-align: center;
+    width: 223px;
+    height: 350px;
+    border: 1px solid whitesmoke;
+    border-radius: 10%;
+    color: #f0f0f0;
+    display: block;
+  
+  
+}
+
+.round-shape img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.round-shape p {
+   
+    font-size: 16px;
+    color: #d6d6d6;
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+}

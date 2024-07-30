@@ -1,0 +1,33 @@
+@font-face {
+    font-family: quote ;
+    src: url(fonts/makes_request/Makes-Request.otf);
+
+}
+@font-face {
+    font-family: name ;
+    src: url(fonts/snappy_fingers/name.otf);
+
+}
+body {
+    background-image: url('Images/bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: white;
+}
+  
+
+.quote {
+    font-family: 'quote','Arial', sans-serif; /* Change the font here */
+    text-align: center; /* Center align the text */
+    font-size: 36px; /* Optional: Change the font size */
+    color: #f1f1f1; /* Optional: Change the text color */
+    margin: 120px; /* Optional: Add some margin */
+    margin-bottom: 50px;
+    
+}
+h2{
+    font-family: 'name','Arial', sans-serif; /* Change the font here */
+    text-align: center; /* Center align the text */
+}
