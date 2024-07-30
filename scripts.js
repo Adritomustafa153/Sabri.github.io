@@ -1,22 +1,18 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const dropdown = document.querySelector('.dropdown-content');
-    const items = dropdown.querySelectorAll('a');
-    
-    document.querySelector('.dropbtn').addEventListener('mouseover', () => {
-        dropdown.classList.add('show');
-        items.forEach((item, index) => {
-            setTimeout(() => {
-                item.classList.add('show');
-            }, index * 100); // Adjust this value for a smoother or quicker transition
-        });
-    });
-    
-    document.querySelector('.dropbtn').addEventListener('mouseleave', () => {
-        items.forEach((item) => {
-            item.classList.remove('show');
-        });
-        setTimeout(() => {
-            dropdown.classList.remove('show');
-        }, items.length * 100); // Match this value to the delay above
-    });
-});
+const images = [
+    'images/bg1.jpg', 
+    'images/bg2.jpg', 
+    'images/bg3.jpg'
+];
+const backgroundContainer = document.getElementById('background-container');
+let currentIndex = 0;
+
+function changeBackground() {
+    currentIndex = (currentIndex + 1) % images.length;
+    backgroundContainer.style.backgroundImage = `url(${images[currentIndex]})`;
+}
+
+// Initial background image
+backgroundContainer.style.backgroundImage = `url(${images[currentIndex]})`;
+
+// Change background every 5 seconds
+setInterval(changeBackground, 5000);

@@ -14,7 +14,16 @@ body {
     justify-content: center;
     gap: 144px;
     margin-top: 50px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 2s ease-in-out forwards;
     
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .round-shape{
@@ -27,7 +36,7 @@ body {
     text-align: center;
     width: 223px;
     height: 350px;
-    border: 1px solid whitesmoke;
+    border: 1px solid rgb(131, 131, 131);
     border-radius: 10%;
     color: #f0f0f0;
     display: block;
@@ -50,4 +59,22 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 15px;
+}
+
+.first-image{
+    text-align: center;
+    transform: translateY(50px);
+    animation: fadeIn 2s ease-in-out forwards;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.first-image img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
 }
