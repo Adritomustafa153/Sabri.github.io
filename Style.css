@@ -244,46 +244,132 @@ h2 {
     color: #ddd;
 }
 
-/* Media queries for responsiveness */
-@media (max-width: 900px) {
-    .quote {
-        font-size: 30px;
-    }
+/* Responsive Styles */
+
+@media only screen and (max-width: 1200px) {
     .container {
-        flex-direction: none;
-        gap: 72px;
+        gap: 100px;
     }
-    .round-shape p {
-        width: 180px;
-        height: 280px;
-    }
+
     .first-image img {
         width: 150px;
         height: 150px;
     }
+
+    .round-shape p {
+        width: 180px;
+        height: 300px;
+    }
 }
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 992px) {
+    .quote {
+        font-size: 32px;
+    }
+
+    .container {
+        gap: 50px;
+        flex-direction: none;
+    }
+
+    .first-image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .round-shape p {
+        width: 180px;
+        height: 320px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .quote {
+        font-size: 28px;
+    }
+
+    .first-image img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .round-shape p {
+        width: 150px;
+        height: 280px;
+        font-size: 14px;
+    }
+
+    #redirect-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
     .quote {
         font-size: 24px;
+        margin: 20px;
     }
-    .container {
-        flex-direction: none;
-        gap: 30px;
-    }
-    .round-shape p {
-        width: 140px;
-        height: 350px;
-    }
+
     .first-image img {
         width: 100px;
         height: 100px;
     }
-    .about-btn {
-        flex-direction: column;
+
+    .round-shape p {
+        width: 120px;
+        height: 250px;
+        font-size: 12px;
     }
+
     #redirect-button {
-        padding: 10px 20px;
-        font-size: 14px;
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+
+    .footerlogo {
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .quote {
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    .container {
+        
+        flex-direction: column;
+        
+    }
+
+    .first-image img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .round-shape p {
+        width: 120px;
+        height: 200px;
+        font-size: 10px;
+        padding: 10px;
+    }
+
+    #redirect-button {
+        padding: 6px 12px;
+        font-size: 10px;
+    }
+
+    .footerlogo {
+        margin-left: 10px;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+
+    .social-links a {
+        font-size: 20px;
     }
 }
