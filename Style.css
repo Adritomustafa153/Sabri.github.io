@@ -123,6 +123,8 @@ h2 {
 
 #redirect-button:hover {
     background-color: #0056b3;
+    transform: translateY(-8px);
+    scale: 1.1;
 }
 
 .dropdown {
