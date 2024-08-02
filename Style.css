@@ -305,7 +305,7 @@ h2 {
     }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 767px) and (min-width: 576px){
     .quote {
         font-size: 24px;
         margin: 20px;
@@ -329,6 +329,47 @@ h2 {
 
     .footerlogo {
         margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 575px) and (min-width: 401px) {
+    .quote {
+        font-size: 22px;
+        margin: 15px;
+    }
+
+    .container {
+        
+        flex-direction: column;
+        
+    }
+
+    .first-image img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .round-shape p {
+        width: 120px;
+        height: 200px;
+        font-size: 11px;
+    }
+
+    #redirect-button {
+        padding: 7px 14px;
+        font-size: 11px;
+    }
+
+    .footerlogo {
+        margin-left: 15px;
+    }
+
+    .footer p {
+        font-size: 13px;
+    }
+
+    .social-links a {
+        font-size: 22px;
     }
 }
 
