@@ -10,7 +10,7 @@
 }
 
 body {
-    background-image: url('Images/bg2.jpg');
+    background-image: url('Images/bg1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -44,6 +44,14 @@ body {
 h2 {
     font-family: 'name', 'Arial', sans-serif;
     text-align: center;
+
+}
+.txt-gradient{
+   
+    background: linear-gradient(-25deg, #007bff 0% , #20FFBC 100%);
+    color: transparent;
+    background-clip: text;
+
 }
 
 .container {
@@ -64,11 +72,11 @@ h2 {
     }
 }
 
-.round-shape {
+.round-shape1 {
     text-align: center;
 }
 
-.round-shape p {
+.round-shape1 p {
     text-align: center;
     width: 223px;
     height: 350px;
@@ -82,13 +90,62 @@ h2 {
     padding: 15px;
 }
 
-.round-shape img {
+.round-shape1 img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
 }
 
+.round-shape2 {
+    text-align: center;
+}
+
+.round-shape2 p {
+    text-align: center;
+    width: 223px;
+    height: 350px;
+    border: 1px solid rgb(131, 131, 131);
+    border-radius: 10%;
+    color: #f0f0f0;
+    display: block;
+    font-size: 16px;
+    color: #d6d6d6;
+    text-align: justify;
+    padding: 15px;
+}
+
+.round-shape2 img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.round-shape3 {
+    text-align: center;
+}
+
+.round-shape3 p {
+    text-align: center;
+    width: 223px;
+    height: 350px;
+    border: 1px solid rgb(131, 131, 131);
+    border-radius: 10%;
+    color: #f0f0f0;
+    display: block;
+    font-size: 16px;
+    color: #d6d6d6;
+    text-align: justify;
+    padding: 15px;
+}
+
+.round-shape3 img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
 .first-image {
     text-align: center;
     transform: translateY(50px);
@@ -114,7 +171,7 @@ h2 {
     padding: 15px 30px;
     font-size: 16px;
     color: #fff;
-    background-color: #007bff;
+    background-color: #15da9f;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -122,7 +179,7 @@ h2 {
 }
 
 #redirect-button:hover {
-    background-color: #0056b3;
+    background-color: #008881;
     transform: translateY(-8px);
     scale: 1.1;
 }
