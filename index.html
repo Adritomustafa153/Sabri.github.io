@@ -9,11 +9,14 @@
     <!-- <link rel="stylesheet" href="container.css">
     <link rel="stylesheet" href="footer.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
     <!-- <link rel="stylesheet" href="dropdown.css">
     <link rel="stylesheet" href="about-me-btn.css"> -->
 </head>
 <body>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     
     <div class="dropdown">
         <button class="dropbtn">Menu</button>
@@ -41,25 +44,31 @@
                 <footer>- Albert Einstein</footer>
             </blockquote>
         </div>
-        <div class="container">
-            <div class="round-shape1">
+        <!-- <div class="btn-hide">
+            <button id="hidden-button" data-aos="fade-out">Scroll Down</button>
+        </div> -->
+        <div class="container" style="overflow-x: hidden;">
+            <div class="round-shape1 " data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
                 <img src="Images/image1.jpg" alt="">
                 <h5>Label 1</h5>
                 <p>Sabrina Hossain Fariha is a notable figure known for her impactful contributions in [mention field or domain if known]. She has garnered recognition for her dedication and achievements, making significant strides and inspiring many in her community. Her work continues to influence and shape her field positively.</p>
             </div>
-            <div class="round-shape2">
+            <div class="round-shape2"  data-aos="fade-up"
+            data-aos-duration="2000">
                 <img src="Images/image2.jpeg" alt="">
                 <h5>Label 1</h5>
                 <p>Sabrina Hossain Fariha is a notable figure known for her impactful contributions in [mention field or domain if known]. She has garnered recognition for her dedication and achievements, making significant strides and inspiring many in her community. Her work continues to influence and shape her field positively.</p>
             </div>
-            <div class="round-shape3">
+            <div class="round-shape3"  data-aos="fade-left">
                 <img src="Images/image3.jpeg" alt="">
                 <h5>Label 1</h5>
                 <p>Sabrina Hossain Fariha is a notable figure known for her impactful contributions in [mention field or domain if known]. She has garnered recognition for her dedication and achievements, making significant strides and inspiring many in her community. Her work continues to influence and shape her field positively.</p>
             </div>
         </div>
     </div>
-    <div class="about-btn">
+    <div class="about-btn" data-aos="zoom-in">
         <button id="redirect-button">About Me!</button>
         <script src="about-me-btn.js"></script>
     </div>
@@ -83,3 +92,19 @@
 
 </body>
 </html>
+    <script>
+        AOS.init();
+
+    document.addEventListener("scroll", function() {
+    var button = document.getElementById("hidden-button");
+    var scrollPosition = window.scrollY;
+
+    if (scrollPosition > 50) { // Change this value to adjust when the button hides
+        button.classList.add("hidden");
+    } else {
+        button.classList.remove("hidden");
+    }
+});
+
+
+      </script>
