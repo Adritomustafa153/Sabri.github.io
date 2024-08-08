@@ -4,6 +4,10 @@
             margin: 0;
             font-family: Arial, sans-serif;
         } 
+        h2{
+            font-family : Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
         .about-div {
             display: flex;
             justify-content: center;
@@ -39,6 +43,6 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to the button */
         }
         .download-button:hover {
-            background-color: #008881;
+            background-color: #038881;
         }
 
