@@ -1,48 +1,129 @@
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
-        body {
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        } 
-        h2{
-            font-family : Arial, Helvetica, sans-serif;
-            text-align: center;
-        }
-        .about-div {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 50%;
-            border: 1px solid #7c7c7c;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: 200px;
-            border-radius: 10px;
-        }
-        .image-div, .info-div {
-            margin: 10px;
-        }
-        .image-div img {
-            width: 200px; /* Set the width of the image */
-            height: 200px; /* Set the height of the image to make it square */
-            object-fit: cover; /* Ensure the image covers the entire area */
-            border-radius: 10px; /* Optional: Add slight rounding to corners */
-            box-shadow: 0 4px 8px rgba(161, 161, 161, 0.2); /* Add shadow to the image */
-        }
-        .download-button {
-            display: inline-block;
-            padding: 10px 15px;
-            font-size: 12px;
-            color: white;
-            background-color: #15da9f;
-            text-decoration: none;
-            border-radius: 5px;
-            align-self: flex-start; /* Align the button to the right side */
-            margin-left: 80vh;
-            margin-top: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to the button */
-        }
-        .download-button:hover {
-            background-color: #038881;
-        }
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
 
+.about-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50%;
+    border: 1px solid #7c7c7c;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 200px;
+    border-radius: 10px;
+    flex-direction: row; /* Ensures the content is in a row for larger screens */
+}
+
+.image-div, .info-div {
+    margin: 10px;
+}
+
+.image-div img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(161, 161, 161, 0.2);
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 12px;
+    color: white;
+    background-color: #15da9f;
+    text-decoration: none;
+    border-radius: 5px;
+    align-self: flex-start;
+    margin-left: 80vh;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.download-button:hover {
+    background-color: #038881;
+}
+
+/* Responsive design for screen size 1200px and up */
+@media (max-width: 1200px) {
+    .about-div {
+        margin: 150px;
+    }
+}
+
+/* Responsive design for screen size 992px to 1199px */
+@media (max-width: 992px) {
+    .about-div {
+        margin: 100px;
+    }
+    .download-button {
+        margin-left: 60vh;
+    }
+}
+
+/* Responsive design for screen size 768px to 991px */
+@media (max-width: 768px) {
+    .about-div {
+        margin: 50px;
+    }
+    .download-button {
+        margin-left: 50vh;
+    }
+}
+
+/* Responsive design for screen size 576px to 767px */
+@media (max-width: 767px) {
+    .about-div {
+        margin: 30px;
+        flex-direction: column; /* Stacks content vertically for smaller screens */
+    }
+    .download-button {
+        margin-left: 0;
+        align-self: center; /* Center the button */
+    }
+}
+
+/* Responsive design for screen size 401px to 575px */
+@media (max-width: 575px) {
+    .about-div {
+        margin: 20px;
+    }
+    .image-div img {
+        width: 150px;
+        height: 150px;
+    }
+    .download-button {
+        width: 100%;
+        text-align: center; /* Center the text */
+        font-size: 14px;
+        margin-top: 15px;
+    }
+}
+
+/* Responsive design for screen size 400px and below */
+@media (max-width: 400px) {
+    .about-div {
+        margin-top: 50%;
+        margin: 10px;
+        padding: 15px;
+    }
+    .image-div img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+    }
+    .download-button {
+        width: 25%;
+        font-size: 12px;
+        margin-top: 10px;
+        margin-left: 35vh;
+    }
+}
