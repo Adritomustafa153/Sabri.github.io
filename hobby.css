@@ -1,42 +1,70 @@
-.slider {
-    position: relative;
-    max-width: 100%;
-    height: 500px;
-    overflow: hidden;
+@font-face {
+    font-family: hobby-font;
+    src: url(fonts/pink_misty/Pink\ Misty.ttf);
 }
 
-.slides {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
     display: flex;
-    width: 300%;
-    transition: transform 0.5s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
-
-.slide {
-    width: 100%;
-    flex: 1;
-}
-
-.slide img {
-    width: 100%;
-    height: auto;
-}
-
-/* Navigation buttons for slider */
-.navigation {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
-}
-
-.nav-btn {
-    cursor: pointer;
-    font-size: 24px;
-    background: rgba(0, 0, 0, 0.5);
+.card-list .card-item{
     color: white;
-    padding: 10px;
-    border-radius: 50%;
-    user-select: none;
+    width: 250px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    backdrop-filter: blur(30px);
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
 }
+.hobby-name{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    padding: 10px 35px;
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    background: rgb(102, 255, 171);
+    border: 1px solid transparent;
+    transition: 0.2s ease;
+}
+
+.hobby-name:hover{
+    background:  rgb(91, 206, 142);
+    border: 1px solid white;
+    color: white;
+}
+.hobby-description{
+    font-size: 12px;
+
+}
+.card-list .card-item .user-image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 4px;
+    padding: 4px;
+}
+
+/* .card-list .card-item.hobby-description{
+    font-size: 1.1rem;
+    color: antiquewhite;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+} */
