@@ -6,8 +6,8 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-
+    box-sizing: border-box ;
+    font-family: sans-serif;
 }
 
 body{
@@ -15,10 +15,12 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    background: #030728;
 }
-.card-list .card-item{
+
+.card-list .card-item {
     color: white;
-    width: 250px;
+    width: 400px;
     padding: 35px;
     display: flex;
     flex-direction: column;
@@ -26,45 +28,39 @@ body{
     justify-content: center;
     border-radius: 8px;
     backdrop-filter: blur(30px);
-    background: rgba(255, 255, 255, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-}
-.hobby-name{
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-size: 15px;
-    padding: 10px 35px;
-    color: rgb(255, 255, 255);
-    border-radius: 6px;
-    font-weight: 500;
-    cursor: pointer;
-    background: rgb(102, 255, 171);
-    border: 1px solid transparent;
-    transition: 0.2s ease;
+    background: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.5);
 }
 
-.hobby-name:hover{
-    background:  rgb(91, 206, 142);
-    border: 1px solid white;
-    color: white;
-}
-.hobby-description{
-    font-size: 12px;
-
-}
 .card-list .card-item .user-image{
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin-bottom: 20px;
-    border: 4px;
-    padding: 4px;
+    margin-bottom: 40px;
+    border: 2px solid white;
+    padding: 4px
 }
 
-/* .card-list .card-item.hobby-description{
-    font-size: 1.1rem;
-    color: antiquewhite;
+.card-list .card-item .user-details{
+    font-size: 12px;
+    color: white;
     font-weight: 500;
-    margin-bottom: 10px;
+    margin: 14px 0 40px;
+}
+.card-list .card-item .message-button {
+    font-size: 11px;
+    padding: 10px 35px;
+    color:#030728;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    background: white;
+    border: 1px solid transparent;
+}
 
-} */
+.card-list .card-item .message-button:hover{
+    background: rgba(255,255,255,0.1);
+    border: 1px solid #fff;
+    color: #fff;
+    
+}
