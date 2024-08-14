@@ -84,3 +84,12 @@ body{
 .slider-wrapper  .swiper.slider.button:hover{
     color: antiquewhite;
 }
+
+@media  (max-width: 768px) {
+    .slider-wrapper{
+        margin: 0 10px 40px;
+    }
+    .slider-wrapper  .swiper.slider.button{
+        display: none;
+    }
+}
