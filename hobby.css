@@ -44,7 +44,8 @@ body{
     border-radius: 50%;
     margin-bottom: 40px;
     border: 2px solid white;
-    padding: 4px
+    padding: 4px;
+
 }
 
 .card-list .card-item .user-details{
@@ -70,7 +71,9 @@ body{
     color: #fff;
     
 }
-
+.slider-wrapper .swiper-pagination {
+    margin-bottom: 20px; /* Adjust the value as needed */
+}
 .slider-wrapper .swiper-pagination.bullet{
     background: #fff;
     height: 15px;
