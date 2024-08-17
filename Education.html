@@ -8,7 +8,7 @@
    <link rel="stylesheet" href="Education.css">
    <link rel="stylesheet" href="Navbar&Footer.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <div class="dropdown">
@@ -23,30 +23,32 @@
             <a href="#">Contact</a>
         </div>
     </div>
-
+    <div class="quote">
+        <blockquote>
+            “ Education is the most powerful weapon which you can use to change the world. ” 
+            <footer>— Nelson Mandela</footer>
+        </blockquote>
+    </div>
 <div class="education">
     <div class="text-box left">
         <div class="text-content">
             <h2 class="Instuition-name">IUBAT</h2>
-            <h3 class="year">2021 to present</h3>
             <p>First text box content goes here.</p>
         </div>
         <img src="Images/image1.jpg" alt="Image 1" class="box-image">
     </div>
     
-    <div class="text-box right">
+    <div class="text-box right" data-aos="fade-left">
         <img src="Images/image2.jpeg" alt="Image 2" class="box-image">
         <div class="text-content">
             <h2 class="Instuition-name">IUBAT</h2>
-            <h3 class="year">2021 to present</h3>
             <p>Second text box content goes here.</p>
         </div>
     </div>
     
-    <div class="text-box left">
+    <div class="text-box left3" data-aos="fade-right">
         <div class="text-content">
             <h2 class="Instuition-name">IUBAT</h2>
-            <h3 class="year">2021 to present</h3>
             <p>Third text box content goes here.</p>
         </div>
         <img src="Images/image3.jpeg" alt="Image 3" class="box-image">
@@ -69,5 +71,10 @@
         <p>&copy; 2024 Sabrina Hossain Fariha. All rights reserved.</p>
     </div>
 </footer>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
