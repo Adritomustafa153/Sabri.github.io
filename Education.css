@@ -113,3 +113,118 @@ h3{
     margin-right: 20px;
 }
 
+/* Responsive Styles */
+
+/* 1200px and below */
+@media (max-width: 1200px) {
+    .text-box {
+        width: 50%;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+/* 992px and below */
+@media (max-width: 992px) {
+    .text-box {
+        width: 60%;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    .text-box.left, .text-box.left3 {
+        margin-left: 80px;
+    }
+
+    .text-box.right {
+        margin-right: 80px;
+    }
+}
+
+/* 768px and below */
+@media (max-width: 768px) {
+    .text-box {
+        width: 70%;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .text-box.left, .text-box.left3 {
+        margin-left: 60px;
+    }
+
+    .text-box.right {
+        margin-right: 60px;
+    }
+}
+
+/* 767px to 576px */
+@media (max-width: 767px) {
+    .text-box {
+        width: 80%;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .text-box.left, .text-box.left3 {
+        margin-left: 40px;
+    }
+
+    .text-box.right {
+        margin-right: 40px;
+    }
+
+    .quote {
+        font-size: 30px;
+        margin-top: 30vh;
+    }
+}
+
+/* 575px to 401px */
+@media (max-width: 575px) {
+    .text-box {
+        width: 90%;
+        margin-left: 20px;
+        margin-right: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-box.left, .text-box.left3, .text-box.right {
+        margin-left: 20px;
+        margin-right: 20px;
+        float: none;
+    }
+
+    .quote {
+        font-size: 25px;
+        margin-top: 20vh;
+    }
+
+    .box-image {
+        margin: 0 auto 20px;
+    }
+}
+
+/* 400px and below */
+@media (max-width: 400px) {
+    .text-box {
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .quote {
+        font-size: 20px;
+        margin-top: 15vh;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+}
+
