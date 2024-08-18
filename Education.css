@@ -183,17 +183,20 @@ h3{
 /* 575px to 401px */
 @media (max-width: 575px) {
     .text-box {
-        width: 90%;
-        margin-left: 20px;
+        width: 85%;
+        margin-left: 20px auto;
         margin-right: 20px;
         flex-direction: column;
         text-align: center;
+        height: auto;
+        float: none;
     }
 
     .text-box.left, .text-box.left3, .text-box.right {
         margin-left: 20px;
         margin-right: 20px;
         float: none;
+        height: 200px;
     }
 
     .quote {
@@ -204,14 +207,27 @@ h3{
     .box-image {
         margin: 0 auto 20px;
     }
+    h2, h3 {
+        text-align: center;
+    }
 }
 
 /* 400px and below */
 @media (max-width: 400px) {
     .text-box {
-        width: 100%;
-        margin-left: 10px;
-        margin-right: 10px;
+        width: 80%;
+        height: auto;
+        margin: 10px auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        float: none;
+    }
+    .text-box.left, .text-box.left3, .text-box.right {
+        margin-left: 20px;
+        margin-right: 20px;
+
     }
 
     .quote {
@@ -226,5 +242,6 @@ h3{
     h3 {
         font-size: 20px;
     }
+
 }
 
