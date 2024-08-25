@@ -88,7 +88,12 @@ body,html {
 .wrapper .button:hover{
     width: 200px;
 }
-
+.wrapper .button .icon a {
+    text-decoration: none;
+    color: white;
+    /* display: flex;
+    align-items: center; */
+}
 #background-container {
     position: fixed;
     top: 0;
