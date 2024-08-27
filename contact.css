@@ -1,3 +1,7 @@
+@font-face {
+    font-family: instruction;
+    src: url(fonts/kitsune_spirit/Hanoded\ Fonts\ License\ &\ FAQ\ -\ READ\ ME!.pdf);
+}
 body,html {
     background-image: url('Images/bg1.jpg');
     background-repeat: no-repeat;
@@ -169,7 +173,11 @@ body,html {
         transform: translateY(0);
     }
 }
-
+.instruction{
+   margin-top: 70px;
+text-align: center;
+font-family: 'instruction';
+}
 
 .footer {
     background-color: #333;

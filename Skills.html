@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills & Goals</title>
-    <link rel="icon" href="Images/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="Navbar&Footer.css">
+    <title>Skills Display</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="skills.css">
-
 </head>
 <body>
+
     <div class="dropdown">
         <button class="dropbtn">Menu</button>
         <div class="dropdown-content">
@@ -19,113 +17,107 @@
             <a href="Hobby.html">Hobby</a>
             <a href="Education.html">Education</a>
             <a href="Skills.html">Skills & Goals</a>
-            <a href="#">Experience</a>
             <a href="contact.html">Contact</a>
         </div>
     </div>
-    
-    <h1 class="sub-title">My <span>Skills</span></h1>
-<section class="mh-skills" id="mh-skills">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-md-6">
-                <div class="mh-skills-inner">
-                    <div class="mh-professional-skill">
-                        <h3>Technical Skills</h3>
-                        <div class="each-skills">
-                            <div class="candidatos">
-                                <div class="parcial">
-                                    <div class="info">
-                                        <div class="nome">Javascript</div>
-                                        <div class="percentage-name">86%</div>
-                                    </div>
-                                    <div class="progressBar">
-                                        <div class="percentagem" style="width: 86%;">
 
-                                        </div>
-                                    </div>
-                                </div>
+<!-- <div class="top-msg">
+    <h1>My Skills</h1>
+</div> -->
 
-                                <div class="candidatos">
-                                    <div class="parcial">
-                                        <div class="info">
-                                            <div class="nome">Java</div>
-                                            <div class="percentage-name">50%</div>
-                                        </div>
-                                        <div class="progressBar">
-                                            <div class="percentagem" style="width: 50%;">
-    
-                                            </div>
-                                        </div>
-                                    </div>
+    <div class="main-container">
 
-
-                                    <div class="candidatos">
-                                        <div class="parcial">
-                                            <div class="info">
-                                                <div class="nome">Python</div>
-                                                <div class="percentage-name">20%</div>
-                                            </div>
-                                            <div class="progressBar">
-                                                <div class="percentagem" style="width: 20%;">
-        
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-
-                                        <div class="candidatos">
-                                            <div class="parcial">
-                                                <div class="info">
-                                                    <div class="nome">HTML</div>
-                                                    <div class="percentage-name">65%</div>
-                                                </div>
-                                                <div class="progressBar">
-                                                    <div class="percentagem" style="width: 65%;">
-            
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-
-                            </div>
-                        </div>
+        <section id="barSkills" class="skills-section">
+            <h1 class="technical-skill">Technical Skills</h1>
+            <div class="tech-skills">
+                <div class="tech-skill">
+                    <div class="tech-skill-name">HTML</div>
+                    <div class="tech-skill-bar">
+                        <div class="tech-skill-per" data-per="90%" style="width: 0;"></div>
                     </div>
                 </div>
 
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <div class="mh-professional-skills">
-                    <h3>Professional Skills</h3>
-                    <ul class="mh-professional-progress">
-                        <li>
-                            <div class="mh-progress mh-progress-circle" data-progress="95"></div>
-                            <div class="pr-skill-name">Communication</div>
-                        </li>
+                <div class="tech-skill">
+                    <div class="tech-skill-name">CSS</div>
+                    <div class="tech-skill-bar">
+                        <div class="tech-skill-per" data-per="70%" style="width: 0;"></div>
+                    </div>
+                </div>
 
-                        <li>
-                            <div class="mh-progress mh-progress-circle" data-progress="65"></div>
-                            <div class="pr-skill-name">Team Work</div>
-                        </li>
+                <div class="tech-skill">
+                    <div class="tech-skill-name">JS</div>
+                    <div class="tech-skill-bar">
+                        <div class="tech-skill-per" data-per="83%" style="width: 0;"></div>
+                    </div>
+                </div>
 
-                        <li>
-                            <div class="mh-progress mh-progress-circle" data-progress="78"></div>
-                            <div class="pr-skill-name">Public Speaking</div>
-                        </li>
-
-                        <li>
-                            <div class="mh-progress mh-progress-circle" data-progress="83"></div>
-                            <div class="pr-skill-name">Management</div>
-                        </li>
-                    </ul>
+                <div class="tech-skill">
+                    <div class="tech-skill-name">PHP</div>
+                    <div class="tech-skill-bar">
+                        <div class="tech-skill-per" data-per="91%" style="width: 0;"></div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section id="circleBar" class="skills-section">
+            <h1 class="soft-skill">Soft Skills</h1>
+            <div class="circle-skills-container">
+                <div class="circle-skill">
+                    <div class="circular-progress" data-progress="85">
+                        <div class="inner-circle">
+                            <span class="circle-skill-percent">0%</span>
+                        </div>
+                    </div>
+                    <span class="circle-skill-name">Teamwork</span>
+                </div>
+                <div class="circle-skill">
+                    <div class="circular-progress" data-progress="90">
+                        <div class="inner-circle">
+                            <span class="circle-skill-percent">0%</span>
+                        </div>
+                    </div>
+                    <span class="circle-skill-name">Management</span>
+                </div>
+                <div class="circle-skill">
+                    <div class="circular-progress" data-progress="75">
+                        <div class="inner-circle">
+                            <span class="circle-skill-percent">0%</span>
+                        </div>
+                    </div>
+                    <span class="circle-skill-name">Communication</span>
+                </div>
+                <div class="circle-skill">
+                    <div class="circular-progress" data-progress="80">
+                        <div class="inner-circle">
+                            <span class="circle-skill-percent">0%</span>
+                        </div>
+                    </div>
+                    <span class="circle-skill-name">Public Speaking</span>
+                </div>
+            </div>
+        </section>
     </div>
-</section>
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-<script src="circle-progress.js"></script>
+
+
+    <footer class="footer">
+        <div class="footerlogo">
+            <img src="Images/Logo.png" alt="">
+        </div>
+        <div class="footer-content">
+            
+            
+            <ul class="social-links">
+                <li><a href="https://www.linkedin.com/in/sabrinahossainfariha" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://twitter.com/sabrinahossainfariha" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://facebook.com/sabrinahossainfariha" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="mailto:sabrina@example.com"><i class="fas fa-envelope"></i></a></li>
+            </ul><br>
+            <p>&copy; 2024 Sabrina Hossain Fariha. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="skills.js"></script>
 </body>
 </html>
